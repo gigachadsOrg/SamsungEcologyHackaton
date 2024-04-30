@@ -1,0 +1,189 @@
+/* Подключение шрифтов */
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v26-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v26-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v26-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* Подключение шрифтов конец */
+
+body{
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 30px;
+  color: black;
+}
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 1635px;
+  margin: 0 auto;
+}
+
+/* Header ===================*/
+
+.header{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 160px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 0;
+
+  padding-left: 150px;
+}
+
+.logo{
+  margin-left: -50px;
+}
+
+.pict{
+
+}
+
+
+
+
+
+/* Intro ====================*/
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-top: 160px;
+  height: 1080px;
+  background: #359F3F;
+  background-size: cover;
+}
+
+.intro_title_1{
+  margin: 0px -10px;
+  padding-top: 100px;
+  font-size: 120px;
+  font-weight: 700;
+  color: white;
+}
+
+.intro_title_2{
+  margin: -50px 90px;
+  font-size: 120px;
+  font-weight: 700;
+  color: white;
+}
+
+.intro-text{
+  margin: 160px 0px;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: white;
+  max-width: 900px;
+}
+
+/* Intro ====================*/
+
+
+
+
+/* Travel ====================*/
+
+.travel{
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  
+  background-size: cover;
+}
+
+.travel_title{
+  display: flex;
+  color: #087513;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.travel_text_1{
+  margin: 0px 0px;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  max-width: 1280px;
+}
+
+.travel_text_2{
+  margin: 100px 0px;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  max-width: 750px;
+}
+/* Travel ====================*/
+
+
+
+
+
+/* build ====================*/
+
+.build{
+  height: 1080px;
+  display: flex;
+  background: green;
+  background-size: cover;
+}
+
+.build_title{
+  font-size: 120px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr) 1.4fr;
+  grid-template-rows: repeat(7, 1fr);
+  
+}
+
+.road-map{
+  background-color: #FFFFFF;
+  grid-row: 1/8;
+  grid-column: 1/7;
+  height: 660px;
+  
+  border: 5px solid #FFFFFF;
+  box-shadow: 0px 0px 250px rgba(0, 0, 0, 0.75);
+  border-radius: 23px;
+  padding-top: 20px;
+}
+
